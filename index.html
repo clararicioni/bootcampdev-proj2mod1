@@ -11,6 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            user-select: none;
         }
 
         .container {
@@ -21,9 +22,10 @@
             border-radius: 10px;
         }
 
-        span h1{
+        span h1 {
             color: rgb(209, 209, 36);
         }
+
         .cabecalho {
             display: block;
             text-align: center;
@@ -35,15 +37,21 @@
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
+            text-align: center;
         }
 
         .input {
             margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         input {
             display: block;
-            width: 100%;
+            outline: none;
+            width: 80%;
+            max-width: 400px;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
@@ -52,8 +60,9 @@
 
         .opcoes {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         section {
@@ -62,7 +71,8 @@
             margin: 10px;
             border-radius: 10px;
             text-align: center;
-            width: 30%;
+            width: 100%;
+            max-width: 300px;
         }
 
         button {
@@ -74,14 +84,26 @@
             border: none;
             cursor: pointer;
             margin-top: 10px;
+            width: 100%;
         }
 
         button:hover {
             background-color: #333;
         }
 
-        h3{
+        h3 {
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .opcoes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                width: 90%;
+            }
         }
     </style>
 </head>
