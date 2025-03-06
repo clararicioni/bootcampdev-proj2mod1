@@ -1,0 +1,99 @@
+body {
+    background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.container {
+    background-color: #2C1030;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+span h1 {
+    color: rgb(209, 209, 36);
+}
+
+.cabecalho {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #5A1C65;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    display: block;
+    outline: none;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section {
+    background-color: #4063F0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 16px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .opcoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+}
