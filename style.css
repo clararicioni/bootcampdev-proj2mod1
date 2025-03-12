@@ -1,27 +1,23 @@
 body {
-    background-color: grey;
+    background-color: #3a2a4d;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     background-color: #2C1030;
     color: whitesmoke;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
-}
-
-span h1 {
-    color: rgb(209, 209, 36);
-}
-
-.cabecalho {
-    display: block;
+    max-width: 900px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .box {
@@ -44,7 +40,7 @@ input {
     outline: none;
     width: 80%;
     max-width: 400px;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border-radius: 5px;
     border: none;
@@ -53,18 +49,20 @@ input {
 .opcoes {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; 
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 section {
     background-color: #4063F0;
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
-    width: 100%;
-    max-width: 300px;
+    width: 20%; 
+    min-width: 200px;
+    max-width: 250px;
 }
 
 button {
@@ -85,6 +83,7 @@ button:hover {
 
 h3 {
     text-align: center;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -95,5 +94,16 @@ h3 {
 
     section {
         width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .opcoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 100%;
     }
 }
